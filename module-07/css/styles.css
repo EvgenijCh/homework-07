@@ -199,6 +199,7 @@ a {
 .service-list-item__locked {
   background: url(../img/IconLocked.png);
 }
+
 .service-list-item__basket,
 .service-list-item__laptop,
 .service-list-item__locked {
@@ -248,14 +249,25 @@ a {
   margin-bottom: 80px;
 }
 
-.contact-form__input,
-.contact-form__text-message {
+.contact-form__input {
   width: 455px;
   height: 50px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+  text-align: left;
+  border: 1px solid;
+  border-radius: 3px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-form__text-message {
+  width: 455px;
+  height: 210px;
+  resize: none;
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   text-align: left;
   border: 1px solid;
   border-radius: 3px;
@@ -272,17 +284,23 @@ a {
 .contact-form__text-message:required:focus:invalid:not(:placeholder-shown) {
   outline: 1px solid red;
 }
+
 .contact-form__input:last-child:valid,
 :invalid {
   outline: inherit;
 }
 
-.contact-form__text-message {
-  width: 455px;
-  height: 210px;
-  resize: none;
-  padding-top: 20px;
+.contact-form__input::placeholder,
+.contact-form__text-message::placeholder {
+  color: #bbbbbb;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
 }
+
+
 
 .contact-form__btn-wrapper {
   max-width: 940px;
