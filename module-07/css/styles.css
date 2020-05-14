@@ -129,9 +129,10 @@ a {
 
 .service-list-item-description {
   text-align: center;
-  font-size: 1rem;
-  font-family: "RobotoSlab";
+  font-size: 0.8125rem;
+  font-family: "Roboto Slab";
   color: #777777;
+  line-height: 1.5;
 }
 
 .service-list-item__basket {
@@ -239,14 +240,12 @@ a {
 .contact-form__input::placeholder,
 .contact-form__text-message::placeholder {
   color: #bbbbbb;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.35px;
 }
-
-
 
 .contact-form__btn-wrapper {
   max-width: 940px;
